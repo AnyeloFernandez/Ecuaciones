@@ -1,0 +1,385 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\begin{document}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.3 \textwidth]{logo.pdf}
+   
+    \label{fig:my_label}
+\end{figure}
+\begin{titlepage}
+\centering
+{\bfseries\LARGE Universidad del Cauca \par}
+\vspace{1cm}
+{\scshape\Large Facultad de Ingenier\'ia Civil \par}
+\vspace{2cm}
+{\scshape\Huge ECUACIONES DIFERENCIALES LINEALES DE ORDEN SUPERIOR \par}
+\vspace{2cm}
+{\itshape\Large Presentado a: Jhonatan Collazos Ramirez  \par}
+\vfill
+{\Large Autor: \par}
+{\Large Anyelo Sebastian Fernandez Tumbajoy\par}
+\vfill
+{\Large Agosto 2022 \par}
+\end{titlepage}
+
+
+\title{ECUACIONES DIFERENCIALES LINEALES DE ORDEN SUPERIOR}
+\author{Anyelo Sebastian Fernandez Tumbajoy}
+
+\date{August 2022}
+
+\maketitle
+ \tableofcontents
+ \cleardoublepage
+\section{Introduccion }
+En este informe se abordara la temática de Ecuaciones lineales de orden superior, teniendo en cuenta los conceptos de ecuaciones tanto lineales como homogéneas mirando las características de estas para así poder identificar las ecuaciones diferenciales pudiendo así desarrollar problemas de dicho tema, al final de este se encontrara un ejercicio de aplicación el cual es sacado de matemáticas avanzadas para la ciencias e ingeniería de Dennis  G zill. 
+
+\section{Ecuaciones}
+\subsection{Ecuaciones lineles }
+\paragraph{¿Que es una ecuación?}
+es una igualdad de dos expresiones matemáticas( son expresiones donde se utilizan números variables y las operaciones básicas como multiplicación, suma y resta).
+\\\\
+\begin{equation}
+2x+4=5x+3
+\end{equation}
+\\\\
+Se determina que la ecuación es de primer grado cuando la variable tiene como máximo exponente 1, siempre se determina el grado de la ecuación con el  máximo exponente de la variable ya que esta es la que se quiere encontrar.
+
+\paragraph{¿Que es una ecuación lineal?}
+Se llama ecuación lineal o ecuación de primer grado, a una igualdad planteada que involucra la presencia de una o más variables que sólo están elevadas a la primera potencia, y que no contiene productos entre ellas. En otras palabras, una ecuación lineal que involucra solamente sumas y restas de una variable a la primera potencia. \cite{edicion3}
+\\\\
+\begin{equation}
+5x-7=-2(3-7x)+2
+\end{equation}
+\\\\
+Las ecuaciones lineales y caracterizan también por ser funciones y al graficarlas como su nombre lo dice forman líneas.
+\\\\\\\\
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5 \textwidth]{imagen1.pdf}
+    \caption{Sacada de https://www.geogebra.org/graphing?lang=es}
+    \label{fig:my_label}
+\end{figure}
+
+
+\subsection{Ecuaciones lineales homogeneas} 
+las ecuaciones lineales homogéneas se caracteriza por tener todos los términos independientes a la derecha de la igualdad y estos son 0 (estas al ser lineales deben ser de primer grado).
+
+\begin{equation}
+x+y+z=0
+\end{equation}
+
+\section{Ecuaciones diferenciales }
+Es una ecuación que relaciona una función (variable dependiente), su variable o variables (variables independientes) y sus derivadas.
+
+\begin{equation}
+	\frac{dy}{dx}= 6xy
+\end{equation}
+
+\begin{equation}
+	xy'=y+3
+\end{equation}
+
+\begin{equation}
+	y''-y'=y
+\end{equation}
+
+\paragraph{Resolver una ecuación diferencial es} Es encontrar una función que satisfaga dicha ecuación. 
+
+\section{Ecuaciones diferenciales lineales de orden superior }
+
+Una ecuación de n-esimo orden es lineal cuando
+
+
+\begin{equation}
+a_n(x)y^{(n)}+a_{n-1}(x)y^{(n-1)}...+a_1(x)y'+a_0(x)y= g(x)
+\end{equation}
+
+
+\paragraph{condiciones para reconocer cuando una ecuación diferencial es lineal.}
+
+\paragraph{(1).  }La variable dependiente y todas sus derivadas son de primer grado.\\\\
+Cuando se habla de la variable dependiente en las deribasas se tiene:
+ \begin{center}
+ \begin{equation}
+$$ \boxed{\LARGE\frac{dy}{dx}= \frac{\quad\text{\textit{variable dependiente} }}{ \quad\text{\textit{variable independiente}}}}$$
+\end{equation}
+
+ \begin{equation}
+$$ \boxed{\LARGE y' \quad\text{ donde }   \;\; y \quad\text{es la varible dependiente}}$$
+\end{equation}
+ \end{center}
+En la notación prima que significa la primera derivada $ \textbf{y'}$  , segunda derivada $\textbf{y''} $, la letra que acompaña a la notación (') es la variable independiente como se muestra en la ecuación 9.\\\\
+Cuando es la notación de Leibniz el numerador (lo que está arriba) es la variable dependiente y el denominador es la independiente, en la ecuación 8 se muestra como $\textbf{dy}$ es la variable dependiente.
+
+
+\paragraph{(2).  }Los coeficientes de la variable dependiente y sus derivadas dependen de la variable independiente.\\\\
+
+\begin{equation}
+5xy'\;\;\;\;\;,\;\;\;\;  2y\;\;\;\;\;,\;\;\;\; 3x^5\frac{dy}{dx}
+\end{equation}
+\\\\
+los coeficientes o lo que está multiplicando a la derivada tiene que ser con la variable independiente, ya sea $variable^0$ o $variable^n$
+\\\\
+Dados los casos
+\begin{equation}
+2y\frac{dy}{dx}\;\;\;\;\;\;\;\;\;,\;\;\;\;\;\;\;\;\; yy''
+\end{equation}
+las ecuaciones no son lineales 
+\paragraph{(1).  }La linealidad solo se exige para la variable dependiente y sus derivadas.\\\\
+ 
+la linealidad quiere decir que la variable dependiente y/o sus derivadas no pueden estar afectadas por ninguna operación.\\\\
+ Ejemplo: suponiendo que $y$ es la variable dependiente. \begin{equation}
+\frac{4}{y}\;\;\;\;\;\;\;\;\;,\;\;\;\;\;\;\;\;\; (y'')^5\;\;\;\;\;\;\;\;\;,\;\;\;\;\;\;\;\;\;cos(\frac{dy}{dx})
+\end{equation}
+\textbf{ Si en la ecuación la variable dependiente o la derivada  está afectada por alguna de la operaciones anteriores quiere decir que no hay linealidad.}
+
+\subsection{Clasificación del orden de las ecuaciones diferenciales. }
+El orden de una ecuación diferencial se determina con el mayor orden de las derivadas.
+\\\\
+Sea:\begin{equation}
+2xy'''-y''+\frac{5}{3}x^5y'=g(x)
+\end{equation}
+\\\\
+Una ecuación de orden $3 $ ya que La tercera derivad de $y$ es la mayor que se encuntra $(y''')$.
+
+\subsection{Ecuaciones diferenciales  lineales homogéneas. }
+
+Las ecuaciones diferenciales lineales homogéneas al igual que las ecuaciones lineales son las que están igualadas a $0$ (que la función $g(x)$  sea igual a 0).
+\\\\
+Sean:\begin{equation}
+a_n(x)y^{(n)}+a_{n-1}(x)y^{(n-1)}...+a_1(x)y'+a_0(x)y= 0
+\end{equation}
+\begin{equation}
+3x\frac{dy^3}{d^3x}+5\frac{dy}{dx}=0
+\end{equation}
+\\\\
+Ecuaciones diferenciales lineales homogéneas.
+
+\subsection{Ecuaciones diferenciales lineales homogeneas con coeficientes constantes.}
+
+\textbf{Para desarrollar las ecuaciones diferenciales homogéneas con coeficientes constantes se tiene en cuenta los siguientes casos. }
+\paragraph{caso 1:}
+cuando las raíces del polinomio $p(r)=0$ son reales y distintos, $r1,r2,r3...rn$ entonces el sistema fundamental de soluciones de la ecuación tiene la forma.
+
+\begin{equation}
+e^{r_1x},e^{r_2x},......,e^{r_nx}
+\end{equation}
+Y la solución general de la ecuación es: 
+\begin{center}
+\begin{equation}
+$$ \boxed{y =c_1e^{r_1x}+c_2e^{r_2x}+....c_ne^{r_nx}}$$
+\end{equation}
+\end{center}
+
+
+\paragraph{caso 2:}
+Cuando las raíces del polinomio $p(r)=0$ son de multiplicidad, $r1=r2=r3...=rn$ entonces el sistema fundamental de soluciones de la ecuación tiene la forma.
+
+\begin{equation}
+e^{rx},e^{rx},x^2e^{rx}...,x^{k-1}e^{rx},e^{r_{k+1}},...,e^{r_nx}
+\end{equation}
+Y la solución general de la ecuación es: \begin{equation}
+$$ \boxed{y =c_1e^{rx}+c_2e^{rx}+c_3x^2e^{rx}+..,+c_kx^{k-1}e^{rx}+c_{k+1}e^{r_{k+1}}+...+c_ne^{r_nx}}$$
+\end{equation}
+
+\paragraph{caso 3:}
+Cuando las raíces del polinomio $p(r)=0$ son complejas, entonces el sistema fundamental de soluciones de la ecuación tiene la forma.
+
+\begin{equation}
+e^{\alpha_1x}cos\beta_1x,e^{\alpha_1x}sen\beta_1x,e^{\alpha_2x}cos\beta_2x,e^{\alpha_2x}sen\beta_2x,e^{\alpha_5x}+...+e^{r_nx}
+\end{equation}
+Y la solución general de la ecuación es: 
+\begin{equation}
+$$ \boxed{y=c-1e^{\alpha_1x}cos\beta_1x+c_2e^{\alpha_1x}sen\beta_1x+c_3e^{\alpha_2x}cos\beta_2x+c_4e^{\alpha_2x}sen\beta_2x+c_5e^{\alpha_5x}+...+c_ne^{r_nx}}$$
+\end{equation}
+\cite{edicion2}
+
+\textbf{Ejercicio:}
+Sea
+
+\begin{equation}
+y'''-3y''-3y'-y=0
+\end{equation}
+ecuación diferencial lineal homogénea de orden 3.\\\\
+
+\textbf{paso 1:} Determinar un polinomio característico.(se forma a partir del coeficiente y el orden de la derivada)
+
+\begin{equation}
+p(r)=r^3-3r^2-3r+1=0
+\end{equation}
+\begin{equation}
+(r+1)(r^2-4r+1)=0
+\end{equation}
+formula cuadrática
+
+\begin{equation}
+x = \frac {-b \pm \sqrt {b^2 - 4ac}}{2a}
+\end{equation}
+remplazando
+\begin{equation}
+r = \frac {4 \pm \sqrt {4^2 - 4*1*1}}{2*1}=2 \pm \sqrt {3}
+\end{equation}
+Exixten 3 soluciones.
+\begin{equation}
+2+\sqrt{3}
+\end{equation}
+\begin{equation}
+2-\sqrt{3}
+\end{equation}
+\begin{equation}
+-1
+\end{equation}
+\textbf{paso 2:}   De acuerdo al tipo de raíz que tenemos miramos en los anteriores casos hallamos  el sistema fundamental de solución. \textbf{En este caso tenemos 3 números reales distintos que sería el caso 1  }(mirar ecuación $16$ y $17$).
+
+\begin{equation}
+e^{-x},e^{2 + \sqrt {3}},e^{2 - \sqrt {3}}
+\end{equation}
+\textbf{paso 3:} Determinar la solución general de la EDLH 
+\begin{center}
+\begin{equation}
+$$ \boxed{y =c_1e^{-x}+c_2e^{2 + \sqrt {3}}+c_3e^{2 - \sqrt {3}}}$$
+\end{equation}
+\end{center}
+\subsection{ Ejercicio de plicacion en la Ingenieria CIvil}
+\textit{En un sistema resorte-masa libre no amortiguado oscila con periodo de 3s. Cuando se eliminan 8 libras del resorte, el sistema tiene entonces un periodo de 2s. ¿Qué peso tenia originalmente la masa en el resorte?. }\cite{edicion} 
+\\
+
+
+Ecuacion de movimientos armónicos amortiguados forzados. 
+\begin{equation}
+\LARGE mx''+cx'+ kx = f(x)
+\end{equation}
+
+\begin{center}
+\fbox{ \parbox{0.98\linewidth}{"El sistema dice que es no amortiguado libre entonces no hay fuerzas  y donde no hay fuerza de restitución no hay fuerzas de amortiguamiento" }}
+\end{center}
+
+
+
+\begin{equation}
+\LARGE mx''+kx=0
+\end{equation}
+
+\textbf{Si se pasa a dividir \textbf{$m$} en ambos miembros se tiene }
+
+\begin{equation}
+\LARGE x''+\frac{k}{m}x=0
+\end{equation}
+
+En terminos físicos  (la frecuencia al cuadrado)
+\begin{center}
+\begin{equation}
+$$ \boxed{w^2=\frac{k}{m}}$$
+\end{equation}
+\end{center}
+De manera que
+\begin{equation}
+\LARGE x''+w^2x=0
+\end{equation}
+Otra forma de escribir la frecuencia
+
+\begin{equation}
+\LARGE w=\frac{2\pi}{T}
+\end{equation}
+reescribiendo el periodo 
+\begin{equation}
+\LARGE T=\frac{2\pi}{w}
+\end{equation}
+masa en terminos de sumtoria de fuerzas.
+\begin{equation}
+\LARGE m=\frac{W}{g}
+\end{equation}
+ donde 
+ 
+\begin{equation}
+\LARGE w= frecuencia 
+\end{equation}
+
+\begin{equation}
+\LARGE W= peso
+\end{equation}
+
+remplazando en la ecuacion 
+\begin{equation}
+\LARGE= 2\pi\sqrt{\frac{W}{k*g}}
+\end{equation}
+simplificar
+\begin{equation}
+\LARGE\frac{\sqrt{kg}}{2\pi}=\frac{\sqrt{W}}{T}
+\end{equation}
+
+\begin{center}
+Datos
+\end{center}
+
+\begin{center}
+m1; $T=2s$ \;\;\;\;\;$W_i=m*g$
+\end{center}
+\begin{center}
+m2; $T=3s$ \;\;\;\;\;$W_f=m*g-8$
+\end{center}
+ 
+ la ecuacion 43  es la misma para $m1$ y $ m2$
+ \begin{equation}
+\LARGE\frac{\sqrt{W}}{T_1}=\frac{\sqrt{W}}{T_2}
+\end{equation}
+con los datos se obtiene 
+
+ \begin{equation}
+\LARGE\frac{\sqrt{W_1}}{3}=\frac{\sqrt{W_1-8}}{2}
+\end{equation}
+\\\\
+ \begin{equation}
+\LARGE\frac{2}{3}=\frac{\sqrt{W_1-8}}{\sqrt{W_1}}
+\end{equation}
+\\\\
+\begin{equation}
+\LARGE\frac{2}{3}=\sqrt{\frac{W_1-8}{W_1}}
+\end{equation}
+
+Elevando ambos miembros al cuadrado para eliminar raiz queda.
+\begin{equation}
+\LARGE\frac{4}{9}=1-\frac{8}{W_1}
+\end{equation}
+\\
+\begin{center}
+Se despeja W
+\end{center}
+
+\begin{equation}
+\LARGE -\frac{5}{9}=\frac{8}{W_1}
+\end{equation}
+\\\\
+\begin{equation}
+\LARGE W_1=\frac{-\frac{8}{1}}{-\frac{5}{9}}=\frac{72}{5}
+\end{equation}
+
+\begin{equation}
+\LARGE W_1=14.4
+\end{equation}
+\\\\
+“Aunque si se disminuye la masa van a ver parámetros que no alteran el sistema mientras se trabaje en el mismo resorte”.  
+
+
+\bibliographystyle{apalike} 
+\bibliography{edicion}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
