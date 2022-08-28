@@ -1,0 +1,2 @@
+# Ecuaciones
+INFORME DE LATEX
